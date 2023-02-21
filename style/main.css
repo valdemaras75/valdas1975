@@ -1,0 +1,388 @@
+@import"./reset.css";
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+/* header start */
+
+.container{
+   max-width: 1250px;
+   margin: 0 auto;
+   /* background: red; */
+} 
+
+.header{
+   position: fixed;
+   top: 0px;
+   left: 0;
+   display: block;
+   z-index: 9999;
+   width: 100%;
+   overflow: hidden;
+}
+
+.header-content{
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   align-items: center;
+   gap: 0 40px;
+   border: solid 1px #470006;
+   border-radius: 30px;
+   background: #fff
+}
+
+.logo-text{
+   font-family: 'Cabin Sketch', cursive;
+   font-weight: 700;
+   font-size: 50px;
+   font-weight: 700;
+   color: #470006;
+   text-transform: uppercase;
+}
+
+.menu-list{
+   display: flex;
+   gap: 0 40px;
+}
+
+.menu-link{
+   color: #030303;
+   font-size: 25px;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+
+.phone-text{
+   color: #030303;
+   font-size: 25px;
+   font-weight: 900;
+}
+
+/* header end */
+
+/* main start */
+
+.main-content{
+   display: flex;
+   justify-content: space-between;
+   padding: 110px 10px 30px 10px;
+}
+
+.main-item{
+   max-width: 600px;
+   border: 1px solid #470006;
+   border-radius: 30px;
+   background: #f1f1f1;
+} 
+
+.main-title{
+   margin-top: 80px;
+   text-align: center;
+}
+
+.main-title-text{
+   font-family: 'Cabin Sketch', cursive;
+   font-weight: 700;
+   font-size: 60px;
+   font-weight: 700;
+   color: #470006;
+}
+
+.main-text{
+   text-align: left;
+   padding: 10px 10px 10px 80px;
+}
+
+.main-text-1{
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.main-content2{
+   border: 1px solid #470006;
+   border-radius: 30px;
+   padding: 10px;
+   margin-left: -10px;
+}
+
+.main-images{
+   border-radius: 30px;
+   min-height: 500px;
+}
+
+/* main end */
+
+/* skills start */
+
+.skills-iner{
+   padding: 90px 10px 180px 10px;
+}
+
+.skills-title{
+   text-align: center;
+   border-bottom: 10px solid #470006; 
+   max-width: 350px;
+   margin-left: 450px;
+} 
+
+.skills-title-text{
+   font-family: 'Cabin Sketch', cursive;
+   font-weight: 700;
+   font-size: 70px;
+   color: #470006;
+   text-transform: uppercase;
+   text-align: center;  
+}
+
+.skills-content{
+   display: flex;
+   justify-content: space-between;
+   gap: 0 150px;
+}
+
+.skills-item{
+   margin-top: 50px;
+   border: 1px solid #470006;
+   border-radius: 30px;
+   padding: 30px;
+}
+
+.skills-img{
+   text-align: center;
+}
+
+
+.skills-text{
+   margin-top: 10px;
+   text-align: center;
+}
+
+/* skills end */
+
+/* contacts start */
+
+.contacts-content{
+   display: flex;
+   justify-content: space-between;
+   padding: 250px 100px 50px 10px;
+}
+
+.contacts-item{
+   margin-left: 100px;
+   margin-top: 60px;
+}
+
+.contacts-title-text{
+      font-family: 'Cabin Sketch', cursive;
+      font-weight: 700;
+      font-size: 70px;
+      color: #470006;
+      text-transform: uppercase;
+}
+
+.info{
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.info1{
+   color: #470006;
+   padding-left: 40px;
+}
+
+.info-link{
+   color: #470006;
+}
+
+/* contacts end */
+
+/* footer start */
+
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   margin: 2px;
+   background: #470006;
+   margin-bottom: 20px;
+   align-items: center;
+   border-radius: 30px;
+}
+
+.footer-copyring-text{
+   color: #fff;
+}
+
+.footer-social-content{
+   display: flex;
+   gap: 0 50px;
+}
+
+.footer-phone-number{
+   color: #fff;
+}
+
+/* footer end */
+
+
+/* media start */
+
+@media( max-width: 850px ){
+   .header-content{
+      margin: 0 10px 0 10px;
+   }
+   
+   .logo-text{
+      font-size: 40px;
+
+   }
+
+   .menu-link{
+      font-size: 15px;
+   }
+
+   .phone-text{
+      font-size: 15px;
+   }
+
+   .main-content{
+      display: block;
+   }
+
+   .main-item{
+      max-width: 100%;
+   }
+
+   .main-content2{
+      padding: 0 10px 0 10px;
+      margin: 5px 0 0 5px;
+   }
+
+   .skills-title{
+     margin-left: 220px;
+   }
+
+   .skills-text-1{
+     font-size: 10px;
+   }
+
+   .contacts-content{
+      display: block;
+      padding-left: 100px;
+   }
+
+   .contacts-item{
+      margin-left: 80px;
+   }
+
+   .contacts-item-maps{
+      margin-top: 20px;
+   }
+
+}
+
+@media(max-width: 500px){
+   .header-content{
+      border: none;
+      border-radius: 0;
+      display: block;
+   }
+
+   .logo{
+      text-align: center;
+   }
+
+   .menu-list{
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+   }
+
+   .menu-item{
+      margin-bottom: 5px;
+   }
+
+   .phone{
+      text-align: center;
+      margin-top: 5px;
+   }
+
+   .main-title-text{
+      font-size: 40px;
+   }
+
+   .main-item{
+      background: #fff;
+      border: none;
+      border-radius: 0;
+   }
+
+   .skills-title-text{
+      font-size: 70px;
+   }
+
+   .main-content2{
+      border: none;
+      border-radius: 0;
+   }
+
+   .skills-title{
+      margin-left: 20px;
+   }
+
+   .skills-content{
+      display: block;
+   }
+
+   .skills-text-1{
+      font-size: 20px;
+   }
+
+       .contacts-content {
+          padding-left: 10px;
+       }
+   
+       .contacts-item {
+          margin-left: 30px;
+       }
+   
+       .contacts-item-maps {
+          margin-top: 20px;
+       }
+
+       .info1{
+         font-size: 15px;
+       }
+
+       .footer-copyring-text{
+         font-size: 13px;
+       }
+
+       .footer-social-content{
+         gap: 0 5px;
+       }
+
+       .footer-phone-number{
+         font-size: 13px;
+       }
+
+
+   }
+
+
+
+
+
+
+
+
